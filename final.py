@@ -62,7 +62,8 @@ logo = ImageTk.PhotoImage(logo)
 logo_label = Label(image=logo)
 logo_label.image = logo
 logo_label.pack(side= LEFT, padx = 30, pady =40)
-
+sub1 = Button(root, text = "SUBMIT",command = out , font="Raleway", bg="#20bebe", fg="white", height=7, width=20)
+sub1.pack(side = RIGHT,padx = 50, pady =50)
 
 
 var = dict()
@@ -72,6 +73,7 @@ for i in symptoms :
     chk = Checkbutton(root, text = i, variable = var[i], width = 15, fg= "#FAE82B",  bg="#872919")
     chk.pack(side = TOP , fill=Y)
     
-sub = Button(root, text = "Submit",command = out, font="Raleway", bg="#20bebe", fg="white", height=2, width=15)
+sub = Button(root, text = "EXIT",command =root.quit, font="Raleway", bg="red", fg="white", height=2, width=15)
 sub.pack(side = BOTTOM, fill = Y)
+
 root.mainloop()
