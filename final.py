@@ -62,7 +62,7 @@ logo = ImageTk.PhotoImage(logo)
 logo_label = Label(image=logo)
 logo_label.image = logo
 logo_label.pack(side= LEFT, padx = 30, pady =40)
-sub1 = Button(root, text = "SUBMIT",command = out , font="Raleway", bg="#20bebe", fg="white", height=7, width=20)
+sub1 = Button(root, text = "SUBMIT",command = out , font="Raleway", bg="#20bebe", fg="white", height=3, width=17)
 sub1.pack(side = RIGHT,padx = 50, pady =50)
 
 
